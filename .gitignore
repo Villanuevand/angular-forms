@@ -41,4 +41,4 @@ jspm_packages
 
 # Compiled ts
 app/*.*.js
-app/*.*.*.js
+app/*.*.js.map
