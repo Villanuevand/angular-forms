@@ -9,17 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var TemplateDrivenComponent = (function () {
+    function TemplateDrivenComponent() {
     }
-    AppComponent = __decorate([
+    TemplateDrivenComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n    <h1>\u00A1Forms Forms Forms!</h1>\n    <nav>\n        <a title=\"Forma m\u00E1s sencilla\" routerLink=\"/template-driven\" routerLinkActive=\"active\">Template Driven</a>\n        <a title=\"Forma m\u00E1s compleja\" routerLink=\"/form-builder\" routerLinkActive=\"active\">Form Builder</a>\n    </nav>\n    <router-outlet></router-outlet>\n    "
+            template: "\n    <h2>Template Driven</h2>\n    <p>Get your heroes here</p>"
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], TemplateDrivenComponent);
+    return TemplateDrivenComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.TemplateDrivenComponent = TemplateDrivenComponent;
+//# sourceMappingURL=template-driven.component.js.map

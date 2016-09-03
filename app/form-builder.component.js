@@ -9,17 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var FormBuilderComponent = (function () {
+    function FormBuilderComponent() {
     }
-    AppComponent = __decorate([
+    FormBuilderComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n    <h1>\u00A1Forms Forms Forms!</h1>\n    <nav>\n        <a title=\"Forma m\u00E1s sencilla\" routerLink=\"/template-driven\" routerLinkActive=\"active\">Template Driven</a>\n        <a title=\"Forma m\u00E1s compleja\" routerLink=\"/form-builder\" routerLinkActive=\"active\">Form Builder</a>\n    </nav>\n    <router-outlet></router-outlet>\n    "
+            template: "\n    <h2>Form Builder</h2>\n    <p>Get your heroes here</p>"
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], FormBuilderComponent);
+    return FormBuilderComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.FormBuilderComponent = FormBuilderComponent;
+//# sourceMappingURL=form-builder.component.js.map
