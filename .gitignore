@@ -35,3 +35,22 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Webstorm files
+.idea
+
+# Compiled ts
+app/app.component.js
+app/app.component.js.map
+app/app.component.spec.js
+app/app.component.spec.js.map
+app/app.module.js
+app/app.module.js.map
+app/app.routing.js
+app/app.routing.js.map
+app/form-builder.component.js
+app/form-builder.component.js.map
+app/template-driven.component.js
+app/template-driven.component.js.map
+app/main.js
+app/main.js.map
