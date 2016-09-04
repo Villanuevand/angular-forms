@@ -1,7 +1,7 @@
 <h2>Template Driven</h2>
 <p>Easy way, ¡Perfect Way!</p>`
 <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
-    <fieldset>
+    <fieldset  ngModelGroup="user">
         <label for="firstName">First Name:</label>
         <input name="firstName" type="text" ngModel>
 
@@ -9,7 +9,7 @@
         <label for="lastName">Last Name:</label>
         <input name="lastName" type="text" ngModel>
     </fieldset>
-    <fieldset>
+    <fieldset ngModelGroup="personal">
         <label for="city">City</label>
         <input name="city" type="text" ngModel>
         <br>
