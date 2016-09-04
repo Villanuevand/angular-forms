@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
         <a title="Forma más sencilla" routerLink="/template-driven" routerLinkActive="active">Template Driven</a>
         <a title="Forma más compleja" routerLink="/form-builder" routerLinkActive="active">Form Builder</a>
     </nav>
+    <br><br>
     <router-outlet></router-outlet>
     `
 })

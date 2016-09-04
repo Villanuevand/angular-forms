@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<h2>Template Driven</h2>
+<p>Easy way, ¡Perfect Way!</p>`
+<form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+    <fieldset>
+        <label for="firstName">First Name:</label>
+        <input name="firstName" type="text" ngModel>q
+
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input name="lastName" type="text" ngModel>
+    </fieldset>
+    <fieldset>
+        <label for="city">City</label>
+        <input name="city" type="text" ngModel>
+        <br>
+        <label for="street">Street</label>
+        <input name="street" type="text" ngModel>
+        <br>
+        <label for="zip">Zip Code</label>
+        <input name="zip" type="text" ngModel><br>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit!">
+</form>

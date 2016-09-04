@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 @Component({
-    template: `
-    <h2>Template Driven</h2>
-    <p>Easy way, ¡Perfect Way!</p>`
+    templateUrl: './app/templates/template-driven.component.html'
 })
-export class TemplateDrivenComponent { }
+export class TemplateDrivenComponent {
+
+    submitForm(values) {
+        console.log(values);
+    }
+}
