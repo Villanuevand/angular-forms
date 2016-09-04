@@ -3,11 +3,12 @@
 <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
     <fieldset  ngModelGroup="user">
         <label for="firstName">First Name:</label>
-        <input name="firstName" type="text" ngModel>
-
+        <input name="firstName" type="text" [(ngModel)]="firstName">
+        <em>{{firstName}}</em>
         <br>
         <label for="lastName">Last Name:</label>
-        <input name="lastName" type="text" ngModel>
+        <input name="lastName" type="text" [(ngModel)]="lastName">
+        <em>{{lastName}}</em>
     </fieldset>
     <fieldset ngModelGroup="personal">
         <label for="city">City</label>
