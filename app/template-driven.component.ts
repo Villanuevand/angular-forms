@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
     templateUrl: './app/templates/template-driven.component.html'
 })
 export class TemplateDrivenComponent {
+    public formValues: any;
 
-    submitForm(values) {
-        console.log(values);
+    submitForm(form:any) {
+        this.formValues = form;
     }
 }
