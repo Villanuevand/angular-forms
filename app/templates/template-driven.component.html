@@ -3,7 +3,7 @@
 <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
     <fieldset>
         <label for="firstName">First Name:</label>
-        <input name="firstName" type="text" ngModel>q
+        <input name="firstName" type="text" ngModel>
 
         <br>
         <label for="lastName">Last Name:</label>
@@ -21,4 +21,8 @@
     </fieldset>
     <br>
     <input type="submit" value="Submit!">
+    <br>
+    <pre>
+        {{formValues | json}}
+    </pre>
 </form>
