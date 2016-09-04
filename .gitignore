@@ -40,6 +40,9 @@ jspm_packages
 .idea
 
 # Compiled ts
+app/*.js
+app/*.js.map
+
 app/app.component.js
 app/app.component.js.map
 app/app.component.spec.js

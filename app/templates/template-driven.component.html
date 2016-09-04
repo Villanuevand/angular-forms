@@ -1,0 +1,29 @@
+<h2>Template Driven</h2>
+<p>Easy way, ¡Perfect Way!</p>`
+<form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+    <fieldset  ngModelGroup="user">
+        <label for="firstName">First Name:</label>
+        <input name="firstName" type="text" [(ngModel)]="firstName">
+        <em>{{firstName}}</em>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input name="lastName" type="text" [(ngModel)]="lastName">
+        <em>{{lastName}}</em>
+    </fieldset>
+    <fieldset ngModelGroup="personal">
+        <label for="city">City</label>
+        <input name="city" type="text" ngModel>
+        <br>
+        <label for="street">Street</label>
+        <input name="street" type="text" ngModel>
+        <br>
+        <label for="zip">Zip Code</label>
+        <input name="zip" type="text" ngModel><br>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit!">
+    <br>
+    <pre>
+        {{formValues | json}}
+    </pre>
+</form>
