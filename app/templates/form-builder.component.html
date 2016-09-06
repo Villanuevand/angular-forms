@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<h2>Form Builder</h2>
+<p>More complex way!</p>
+<form [formGroup]="registerForm" (ngSubmit)="submitForm()">
+    <fieldset formGroupName="user">
+        <label>Firstname:</label>
+        <input type="text" name="firstName" formControlName="firstname">
+        <br>
+        <label>Lastname:</label>
+        <input type="text" name="lastname" formControlName="lastname">
+        <br>
+    </fieldset>
+
+    <fieldset formGroupName="address">
+        <label>Street:</label>
+        <input type="text" formControlName="street">
+        <br>
+        <label>Zip:</label>
+        <input type="text" formControlName="zip">
+        <br>
+        <label>City:</label>
+        <input type="text" formControlName="city">
+    </fieldset>
+
+
+    <button type="submit">Submit</button>
+</form>
+<br>
+<pre>
+    {{formValues | json}}
+</pre>
