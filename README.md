@@ -1,6 +1,6 @@
-# Angular 2 Forms  :clipboard:
+# Angular Forms  :clipboard:
 
-Just an example how angular 2 forms works! :computer:
+Just an example how angular forms works! :computer:
 Repo created for NG-BAIRES meetup.
 
 ## Getting Started
